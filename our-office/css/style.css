@@ -1,0 +1,137 @@
+.navbar {
+  border: none;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar.solid {
+  background-color:  #007BFF;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+@media (max-width: 768px) { 
+  .navbar {
+    background-color: #007BFF;
+  }
+  .carousel {
+    margin-top: 56px;
+  }
+}
+.carousel-item img{
+  /* width: 100%;
+  height: 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-toggler {
+  border-color: rgb(27, 66, 194);
+
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  color: rgb(176, 170, 235);
+
+}
+
+.navbar-toggler i {
+  color:  rgb(27, 66, 194) !important;
+}
+
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-nav li a {
+  color: white;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler-icon {
+  /* border: 1px solid white; */
+  /* color: white; */
+  /* background-color: white; */
+  border-color: rgb(112, 116, 179);
+}
+
+#card{
+background-color: rgb(225, 232, 236);  
+}
+#card hr{
+  border-top: 2px solid rgb(40, 89, 250);
+  width: 10%;
+  margin-top: -5px;
+}
+#card i {
+  font-size: 40px;
+  text-shadow: 3px 3px 5px rgb(54, 51, 53);
+  color:  #007BFF;
+}
+#card p {
+  text-align-last: center;
+}
+#card .card {
+  box-shadow: 1px 1px 2px  #007BFF;
+}
+
+#portfolio img{
+  
+  background-size: cover;
+  height: 200px;
+  transition: all .5s ease-in-out;
+}
+#portfolio .img-box  {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+#portfolio h4 {
+  position: absolute;
+  top:-100%;
+  color: white;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(51, 46, 46, 0.5);
+  transition:all .5s ease-in-out;
+}
+#portfolio .img-box:hover h4{
+  top: 0;
+  text-align: center;
+}
+#portfolio a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  outline: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  transform: scale(0);
+  transition: all .5s linear;
+}
+
+#portfolio .img-box:hover a{
+  transform: scale(1);  
+}
+#portfolio .img-box:hover img{
+  transform: scale(1.1);  
+}
