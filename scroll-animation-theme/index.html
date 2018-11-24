@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="#testominial">About </a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="#contact">Contact </a>
+            </li>
+      </ul>
+      
+    </div>
+  </nav>
+
+
+  <section id="showcase" class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="showcase-left">
+            <img src="./img/splashscreen.png" class="img-thumbnail" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="showcase-right">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid voluptas nisi? Ipsam ut corrupti rerum ullam enim itaque vitae hic, libero quibusdam nostrum asperiores praesentium omnis nihil neque tenetur.</p>
+            <a href="" class="btn btn-outline-secondary showcase-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="testominial" class="my-5">
+  <div class="container">
+    <p>
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores vel voluptatibus dolores ipsam reiciendis! Sunt possimus sed et molestiae"
+    </p>
+    <p class="customer">- Jhon Doe</p>
+  </div>
+</section>
+
+<section id="info-one">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="info-left">
+          <img src="./img/slide-1.jpg" class="img-thumbnail" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-right">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corporis reprehenderit dicta veritatis blanditiis nihil.</p>
+          <a href="" class="btn btn-outline-secondary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="info-two">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="info-left">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corporis reprehenderit dicta veritatis blanditiis nihil.</p>
+          <a href="" class="btn btn-outline-secondary">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-right">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corporis reprehenderit dicta veritatis blanditiis nihil.</p>
+          <a href="" class="btn btn-outline-secondary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form action="">
+          <div class="form-group">
+            <label for="">Name :</label>
+            <input type="text" class="form-control" placeholder="Name..">
+          </div>
+          <div class="form-group">
+            <label for="">Email :</label>
+            <input type="text" class="form-control" placeholder="Email..">
+          </div>
+          <div class="form-group">
+            <label for="">Message :</label>
+            <textarea type="text" class="form-control" placeholder="Write Message.."></textarea>
+          </div>
+          <button type="submit" >Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <script src="./js/scrollreveal.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+  
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar',{
+      duration:2000,
+      origin:'bottom'
+    });
+    sr.reveal('.showcase-left',{
+      duration:2000,
+      origin:'top',
+      distance:'300px',
+    });
+    sr.reveal('.showcase-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px'
+    });
+    sr.reveal('.showcase-btn',{
+      duration:2000,
+      delay:2000,
+      // distance:'300px',
+      origin:'left'
+    });
+    sr.reveal('#testominial .container',{
+      duration:3000,
+      origin:'bottom',
+      viewFactor:0.2
+    });
+    sr.reveal('.info-left',{
+      duration:2000,
+      origin:'left',
+      distance:'300px',
+      viewFactor:0.2
+    });
+    sr.reveal('.info-right',{
+      duration:2000,
+      origin:'right',
+      distance:'300px',
+      viewFactor:0.2
+    })
+
+  </script>
+  <script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+</body>
+
+</html>

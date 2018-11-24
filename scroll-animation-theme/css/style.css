@@ -1,0 +1,26 @@
+#showcase h1{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#showcase img {
+  height: 500px;
+  width: 80%;
+}
+
+#testominial {
+  text-align: center;
+  background: #d4d4d4;
+  padding: 50px 5px;
+}
+#testominial p{
+  font-size: 25px;
+  font-family: sans-serif;
+
+}
+#testominial .customer{
+  color: #8b8b8b
+}
+
+#contact {
+  background-image: url('../img/slide-2.jpg');
+}
