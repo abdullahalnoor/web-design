@@ -24,3 +24,45 @@
 #contact {
   background-image: url('../img/slide-2.jpg');
 }
+
+
+
+#contact input[type=text],input[type=email],textarea{
+  color: rgb(0, 0, 0);
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #251919 !important;
+  outline: 0 !important;
+}
+#contact input[type=text]:focus,
+ input[type=email]:focus,
+ textarea:focus,
+ input[type=text]:hover,
+ input[type=email]:hover,
+ textarea:hover
+{
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #420f0f !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 transparent !important;
+}
+#contact input[type=submit] {
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  border: 1px  solid black !important;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: color 1s ease-in-out,background-color .5s linear;
+}
+
+#contact input[type=submit]:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.671) ;
+}
