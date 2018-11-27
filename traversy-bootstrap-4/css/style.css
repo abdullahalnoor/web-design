@@ -1,0 +1,32 @@
+body{
+  background: rgb(72, 73, 73);
+  color: white;
+}
+.navbar {
+  border-bottom: 3px solid rgb(26, 131, 250);
+  opacity: .9;
+}
+#home-section {
+  background-image: url('../img/slide-2.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 700px;
+}
+.dark-overlay {
+  background-color: rgba(53, 53, 53, 0.514);
+  position: absolute;
+  width: 100%;
+  min-height: 700px;
+  left: 0;
+  top: 0;
+}
+.home-inner{
+  margin-top: 150px;
+}
+#home-section .fa {
+  color: rgb(26, 10, 248);
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
